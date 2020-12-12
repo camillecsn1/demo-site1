@@ -1,0 +1,104 @@
+body, div, ul{margin:0; padding:0;}
+
+body{
+	background-color:#F5F5F5;
+	font-family: 'Noto Sans', sans-serif;
+	font-size:13px;
+}
+
+.global{
+	width:1200px; 
+	margin:0 auto;
+	background-color:lavender;
+}
+
+.entete{
+	height:80px;
+	padding:10px;
+	background-color:lightgray;
+	font-size:14px;
+	color:black;
+}
+
+.blocmenu, .contenu{
+	box-sizing: border-box;
+	display:inline-block;
+	vertical-align: top;
+}
+
+.blocmenu{
+	width:200px;
+}
+
+.contenu{
+	width:1000px;
+	padding:10px;
+	padding-left: 30px;
+	background-color:white;
+	margin: 0 auto;
+}
+
+.produits{
+	display:inline-block;
+	text-align: center;
+	border: 3px solid white;
+  	margin: 5px;
+  	padding: 5px 0;
+}
+
+.sous-titre{
+	color:grey;
+	font-size:11px;
+}
+
+.pied{
+	border-top:solid lavender;
+	border-top-width: :2px;
+	padding:30px;
+	background-color:lightgray;
+	height:80px;
+	text-align: center;
+	color:#3C454D;
+}
+
+#menu{
+	display:flex;
+	list-style-type: none;
+}
+
+#menu li{
+	flex:0 1 auto;
+}
+
+#menu li a, #menu li a:visited{
+	display: block;
+	height:50px;
+	line-height: 35px;
+	padding: 15px 50px;
+	font-size:15px;
+	text-decoration:none;
+	color:black;
+}
+
+#menu li a:hover{
+	background-color:lightsteelblue;
+	color:brown;
+}
+
+#produitsDuMois{
+	height:500px;
+	background-color:white;
+}
+
+#produitsDuMois h1{
+	color:black;
+	font-size:40px;
+	text-align:center;
+}
+
+.displayed{
+    width: "600"
+    margin-left: auto;
+    margin-right: auto
+
+}
