@@ -6,6 +6,27 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		window.dataLayer.push({
+			event: 'page_view',
+			p_template: 'catalog',
+			p_content1: 'products',
+			u_logged_status: 'logged',
+			u_country:'France',
+			u_device:'desktop'
+		})
+	</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NJNCPZX');</script>
+<!-- End Google Tag Manager -->
+
 </head>
 <body>
 	<div class="global">
@@ -15,7 +36,8 @@
 	<nav class="blocmenu">
 		<ul id="menu">
 			<li><a href="index.html" >HOMEPAGE</a></li>
-			<li><a href="">ACCOUNT</a></li>
+			<li><a href="account.html">ACCOUNT</a></li>
+			<li><a href="cart.html">CART</a></li>
 		</ul>
 	</nav>
 	<section class="contenu">
@@ -23,22 +45,38 @@
 
 		<h2>NEW</h2>
 		<div class="produits">
-			<img src="produit1.png">
+			<img src="produit1.png" width="250">
 			<p><strong>Wash Bag Chapter 5L</strong></p>
+			<button type="button" class="btn btn-primary btn-add w-100">
+			<i class="fa fa-cart-arrow-down"></i>
+			Add to cart
+			</button>
 		</div>
 		<div class="produits">
-			<img src="produit2.png">
+			<img src="produit2.png" width="250">
 			<p><strong>Classic XL Backpack</strong></p>
+			<button type="button" class="btn btn-primary btn-add w-100">
+			<i class="fa fa-cart-arrow-down"></i>
+			Add to cart
+			</button>
 		</div>
 		<div class="produits">
-			<img src="produit3.png">
+			<img src="produit3.png" width="250">
 			<p><strong>Little Amercia Backpack</strong></p>
+			<button type="button" class="btn btn-primary btn-add w-100">
+			<i class="fa fa-cart-arrow-down"></i>
+			Add to cart
+			</button>
 		</div>
 	</section>
 
 	<footer class="pied">
-		<p>© Copyright Camille</p>
+		<p>©Copyright Camille</p>
 	</footer>
 	</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js" integrity="sha512-zT3zHcFYbQwjHdKjCu6OMmETx8fJA9S7E6W7kBeFxultf75OPTYUJigEKX58qgyQMi1m1EgenfjMXlRZG8BXaw==" crossorigin="anonymous"></script>
+
 </body>
 </html>
