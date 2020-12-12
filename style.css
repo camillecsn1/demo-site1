@@ -9,7 +9,7 @@ body{
 .global{
 	width:1200px; 
 	margin:0 auto;
-	background-color:lavender;
+	background-color:#FAFAFA;
 }
 
 .entete{
@@ -30,20 +30,37 @@ body{
 	width:200px;
 }
 
+.title{
+	text-align:center;
+ 	font-family:arial, sans-serif;
+	font-size: 200%;
+	text-shadow: 2px 2px grey;
+}
+
 .contenu{
 	width:1000px;
 	padding:10px;
 	padding-left: 30px;
 	background-color:white;
 	margin: 0 auto;
+	text-align: center;
+}
+
+.produitsHp{
+	display:inline-block;
+	text-align: center;
+	border: 1px solid white;
+  	margin: 5px;
+  	padding: 5px 0;
 }
 
 .produits{
 	display:inline-block;
 	text-align: center;
-	border: 3px solid white;
+	border: 3px double grey;
   	margin: 5px;
-  	padding: 5px 0;
+  	padding: 5px 2px;
+  	background: #FAFAFA;
 }
 
 .sous-titre{
@@ -52,7 +69,7 @@ body{
 }
 
 .pied{
-	border-top:solid lavender;
+	border-top:solid black;
 	border-top-width: :2px;
 	padding:30px;
 	background-color:lightgray;
