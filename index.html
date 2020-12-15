@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+	<head>
+		<meta charset="utf-8">
+		<title>Homepage</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		window.dataLayer.push({
+			event: 'page_view',
+			p_template: 'homepage',
+			p_content1: 'homepage',
+			u_logged_status: 'logged',
+			u_country:'France',
+			u_device:'desktop'
+		})
+	</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NJNCPZX');</script>
+<!-- End Google Tag Manager -->
+
+	</head>
+
+	<body>
+	 <div class="global">
+	   <header class="entete">
+		    <a href="index.html"><img src="sitelogo.png" width=130px></a>
+			   <ul id="menu1">
+				    <li><a href="cart.html"><img src="shopping-cart.png" width=20px>  CART</a></li>
+				    <li><a href="account.html"><img src="user.png" width=20px>  MY ACCOUNT</a></li>
+			   </ul>
+		  </header>
+
+	   <nav class="blocmenu">
+		      <ul id="menu">
+			       <li><a href="index.html" >HOMEPAGE</a></li>
+			       <li><a href="Catalog.html">CATALOG</a></li>
+		      </ul>
+	   </nav>
+
+		<section class="contenuHome">
+			<h1>New products</h1>
+		</section>	
+
+<div class = "slider">	
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <a href="Catalog.html"><img src="produit1.png" style="width:100%"></a>
+  <div class="text">Wash Bag Chapter 5L</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <a href="Catalog.html"><img src="produit2.png" style="width:100%"></a>
+  <div class="text">Classic XL Backpack</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <a href="Catalog.html"><img src="produit3.png" style="width:100%"></a>
+  <div class="text">Little Amercia Backpack</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+	 <footer class="pied">
+		  <p>©Copyright Camille</p>
+	 </footer>
+	</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
